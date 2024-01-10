@@ -24,7 +24,7 @@ return new class extends Migration
 
             $table->boolean('complete')->default(false);
 
-            $table->foreigId('project_id')
+            $table->foreignId('project_id')
                 ->index()
                 ->constrained()
                 ->cascadeOnDelete();

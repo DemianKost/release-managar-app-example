@@ -19,7 +19,7 @@ class ReleaseFactory extends Factory
     {
         return [
             'title' => $this->faker->words(nb: 3, asText: true),
-            'description' => $this->faker->paragraphs(nb: 2),
+            'description' => $this->faker->paragraphs(nb: 2, asText: true),
             'complete' => $this->faker->boolean(),
             'project_id' => Project::factory()
         ];
