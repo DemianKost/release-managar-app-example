@@ -21,7 +21,7 @@ class ProjectFactory extends Factory
             'title' => $this->faker->words(nb: 4, asText: true),
             'description' => $this->faker->paragraphs(nb: 4, asText: true),
             'active' => $this->faker->boolean(),
-            'user_id' => fn() => User::factory(),
+            'user_id' => User::factory(),
         ];
     }
 }
