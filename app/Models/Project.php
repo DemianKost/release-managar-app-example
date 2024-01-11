@@ -6,6 +6,7 @@ namespace App\Models;
 
 use App\Models\User;
 use App\Models\Release;
+use App\Models\Task;
 use App\Models\Concerns\HasUuid;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -55,6 +56,17 @@ class Project extends Model
     {
         return $this->hasMany(
             related: Release::class,
+            foreignKey: 'project_id'
+        );
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(
+            related: Task::class,
             foreignKey: 'project_id'
         );
     }
