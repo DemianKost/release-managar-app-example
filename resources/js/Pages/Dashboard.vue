@@ -1,7 +1,10 @@
 <script setup>
+import { reactive, computed } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 
-
+const user = computed(() => {
+    return this.user;
+});
 </script>
 
 <template>
@@ -19,7 +22,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                         <div class="flex items-center justify-center text-2xl bg-green-500 rounded-full w-16 h-16">🐸</div>
                     </div>
                     <div class="w-4/6">
-                        <h2 class="text-gray-800 text-lg font-semibold mb-1">John Doe</h2>
+                        <h2 class="text-gray-800 text-lg font-semibold mb-1">{{  }}</h2>
                         <p class="text-gray-700 text-md">Super developer</p>
                     </div>
                 </div>
