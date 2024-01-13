@@ -1,6 +1,7 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import Welcome from '@/Components/Welcome.vue';
+
+
 </script>
 
 <template>
@@ -11,11 +12,15 @@ import Welcome from '@/Components/Welcome.vue';
             </h2>
         </template>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <Welcome />
-                </div>
+        <div class="container mx-auto px-8 py-8 flex flex-wrap">
+            <div class="w-3/12 p-4 border-gray-200 border-r bg-white shadow-sm">
+                col
+            </div>
+            <div class="w-6/12 p-4 bg-white shadow-sm">
+                col
+            </div>
+            <div class="w-3/12 p-4 border-gray-200 border-l bg-white shadow-smz">
+                col
             </div>
         </div>
     </AppLayout>
